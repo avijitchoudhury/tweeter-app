@@ -1,0 +1,22 @@
+.headerOne{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  background-color: #FFDAB9;
+}
+
+#profileIMG {
+  width: 225px;
+  height: 225px;
+}
+
+.tweetName {
+  /* border: 4px dotted orange; */
+  margin: 0px;
+  color: white;
+  font-weight: 600;
+}

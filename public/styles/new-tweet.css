@@ -1,0 +1,34 @@
+.new-tweet {
+  display: flex;
+  flex-flow: column;
+  max-width: 100%;
+  /* margin-left: 300px; */
+}
+
+#tweetBox {
+  border: 0;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 40px;
+  background: #f4f1ec;
+  resize: none;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.new-tweet h2 {
+  font-size: 48px;
+  color: #4056A1;
+}
+
+.tweetButton {
+  background-color: #4056A1;
+  color: white;
+  font-weight: bolder;
+  width: 80px;
+  border-radius: 6px;
+}
