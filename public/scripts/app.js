@@ -71,6 +71,22 @@ $(document).ready(function () {
   }
 
   renderTweets(data);
+
+  let tweetForm = $(".tweetForm")
+  tweetForm.submit( async function(event) {
+    event.preventDefault();
+    try {
+      const response = await $.ajax ({
+        url: `/tweets/`,
+        type: 'POST',
+        dataType: 'JSON',
+        data: tweetForm.serialize()
+      })
+    } catch (error) {
+      console.error(error)
+    }
+    
+  })
 })
 
 

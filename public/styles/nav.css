@@ -17,3 +17,9 @@
   font-family: 'Bungee', cursive;
   font-size: 36px;
 }
+
+.navSpan2 {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
