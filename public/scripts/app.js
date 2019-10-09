@@ -74,6 +74,13 @@
     let tweetForm = $(".tweetForm")
     tweetForm.submit( async function(event) {
       event.preventDefault();
+      let textChar = tweetForm.serialize();
+      let slicedText = textChar.slice(5, textChar.length)
+      if(slicedText.length === 0){
+        return alert("enter some text")
+      } else if (slicedText.length > 140) {
+        return alert("Character count exceed. ERROR!")
+      }
       try {
         const response = await $.ajax ({
           url: `/tweets/`,
@@ -98,6 +105,8 @@
         })  
     }  
     loadTweets(); 
+
+    
 });
 
 
