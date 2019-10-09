@@ -1,4 +1,4 @@
-.tweetContainer {
+#tweetContainer {
   display: flex;
   flex-direction: column;
   margin: 5% 5%;
@@ -13,6 +13,11 @@
 .img_container {
   display: flex;
   padding: 30px 50px;
+}
+
+.raphael {
+  width: 50px;
+  height: auto;
 }
 
 .tweet_display_name {
@@ -48,10 +53,12 @@
   padding-top: 5px;
 }
 
-.tweetContainer:hover {
+#tweetContainer:hover {
+  transition-duration: 0.8s;
   box-shadow: 10px 10px #888888; 
 }
 
-.tweetContainer:hover .handler{
+#tweetContainer:hover .handler{
+  transition-duration: 0.8s;
   opacity: 1;
 }
