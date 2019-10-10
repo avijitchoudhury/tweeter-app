@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: flex-end;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
-  background-color: #FFDAB9;
+  background: linear-gradient(#4056a1,#00BFFF,#FFDAB9);
 }
 
 #profileIMG {
@@ -14,9 +14,28 @@
   height: 225px;
 }
 
+#toggle {
+  cursor: pointer;
+}
+
 .tweetName {
   /* border: 4px dotted orange; */
   margin: 0px;
   color: white;
   font-weight: 600;
+}
+
+/* Table View */
+
+@media (min-width: 768px) {
+   #headerDiv {
+    display: flex;
+    margin: 200px 50px 50px 50px;
+  }
+  
+  .headerOne {
+    width: 300px;
+    height: 350px;
+    justify-content: center;
+  }
 }

@@ -18,6 +18,8 @@
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/1dfb47f746.js" crossorigin="anonymous"></script>
+
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -25,65 +27,77 @@
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
-    <nav class="navDiv">
-      <span class="navSpan">tweeter</span>
-      <span class="navSpan2">Write a new Tweet</span>
-    </nav>
-
-    <header class="headerOne">
-      <div class="headerIMG">
-        <img id="profileIMG" src="/images/profile-hex.png" alt="">
-      </div>
-      <div class="nameDiv">
-        <h2 class="tweetName"><strong>Avijit</strong> Choudhury</h2>
-      </div>
-    </header>
-
-    <div class="mainBodyDiv">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form action="/tweets/" method="POST" class="tweetForm">
-          <textarea id="tweetBox" name="text" placeholder="What are you humming about?"></textarea>
-          <div class="inputDiv">
-          <input type="submit" value="Tweet" class="tweetButton">
-          <span class="counter" id="characters">140</span>
-          </div>
-        </form>
-      </section>
+    <!-- Top nav bar -->
+    <div>
+      <nav class="navDiv">
+        <span class="navSpan">tweeter</span>
+        <span class="navSpan2"><em>Write</em> a new Tweet<i class="fas fa-angle-double-down bounce"></i></span>
+      </nav>
     </div>
-    <!-- Page-specific (main) content here -->
-    <main id="tweetContainer">
-
-      <article class="articleTweet">
-        <header class="mainHeader">
-  
-          <div class="img_container">
-            <img class="raphael" src="/images/raphael.svg">
-            <span class="tweet_display_name">Raphael</span>
-            <span class="handler">@RaphaeltheTurtle</span>
-          </div>
-
-        </header>
-
-        <div class="tweet_content">
-          <p>
-            Teenage Mutant Ninja Turtles is the best cartoon ever!
-          </p>
+    <div id="headerDiv">
+      <header class="headerOne">
+        <div class="headerIMG">
+          <img id="profileIMG" src="/images/profile-hex.png" alt="">
         </div>
-
-        <footer>
-          <div class="tweet_footer">
-            <span>10 days ago</span>
-            <div class="img_footer">
-              <img src="/images/flag.png" alt="">
-              <img src="/images/retweet-arrows-symbol.png" alt="">
-              <img src="/images/heart.png" alt="">
-            </div>
+        <div class="nameDiv">
+          <h2 class="tweetName"><em>Avijit</em> Choudhury</h2>
+        </div>
+      </header>
+    </div>
+    
+    <div id="mainBody">
+    <!-- Section for entering tweets -->
+      <div class="mainBodyDiv">
+        <section class="new-tweet">
+          <div class="errorMessage">
+            <p id="error1"><img src="/images/cancel.png">KEEP YOUR TEXT UNDER 140 CHARACTERS. #lessIsMore<img src="/images/cancel.png"></p>
           </div>
-        </footer>
+          <div class="errorMessageNoText">
+            <p id="error2`"><img src="/images/cancel.png">  RULE OF TWEETING => TYPE SOMETHING! #tweeting101<img src="/images/cancel.png"></p>
+          </div>
+          <h2>Compose Tweet</h2>
+          <form action="/tweets/" method="POST" class="tweetForm">
+            <textarea id="tweetBox" name="text" placeholder="What are you humming about?"></textarea>
+            <div class="inputDiv">
+            <input type="submit" value="Tweet" class="tweetButton">
+            <span class="counter" id="characters">140</span>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- Page-specific (main) content here -->
+      <main id="tweetContainer">
 
-      </article>
+        <article class="articleTweet">
+          <header class="mainHeader">
+    
+            <div class="img_container">
+              <img class="raphael" src="/images/raphael.svg">
+              <span class="tweet_display_name">Raphael</span>
+              <span class="handler">@RaphaeltheTurtle</span>
+            </div>
+
+          </header>
+
+          <div class="tweet_content">
+            <p>
+              Teenage Mutant Ninja Turtles is the best cartoon ever!
+            </p>
+          </div>
+
+          <footer>
+            <div class="tweet_footer">
+              <span>10 days ago</span>
+              <div class="img_footer">
+                <i class="far fa-flag footer_icon"></i>
+                <i class="fas fa-retweet footer_icon"></i>
+                <i class="fas fa-heart footer_icon"></i>
+              </div>
+            </div>
+          </footer>
+
+        </article>
+      </div>
     </main>
 
   </body>

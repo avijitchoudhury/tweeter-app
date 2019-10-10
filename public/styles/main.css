@@ -1,6 +1,7 @@
 #tweetContainer {
   display: flex;
   flex-direction: column;
+  width: 90%;
   margin: 5% 5%;
 }
 
@@ -8,6 +9,7 @@
   border: 2px solid #4056A1;
   margin: 2% 0;
   border-radius: 5px;
+  transition: all 1s ease;
 }
 
 .mainHeader {
@@ -27,13 +29,15 @@
 .tweet_display_name {
   padding-left: 20px;
 }
+
 .handler {
   margin-left: auto;
   opacity: 0;
+  transition: all 1s ease; 
 }
 
 .tweet_content {
-  padding-left: 60px;
+  padding-left: 10px;
 }
 
 .tweet_content p {
@@ -59,10 +63,73 @@
 
 .articleTweet:hover {
   transition-duration: 0.8s;
+  transform: scale(1.05);
   box-shadow: 10px 10px #888888; 
 }
 
 .articleTweet:hover .handler{
   transition-duration: 0.8s;
+  transform: scale(1.05);
   opacity: 1;
+}
+
+.footer_icon {
+  color: black;
+}
+
+.footer_icon:hover {
+  color: red;
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+
+.footer_icon:click
+
+/* Tablet view */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #tweetContainer {
+    width: 90%;
+    margin: 5% 5%;
+  }
+  .img_container, .raphael, .tweet_display_name, .handler {
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .handler {
+    font-size: 20px;
+  }
+  .tweet_content {
+    padding: 0;
+  }
+  .articleTweet:hover {
+    box-shadow: 3px 3px #888888; 
+  } 
+}
+
+/* Desktop view */
+
+@media (min-width: 1024px) {
+#tweetContainer {
+  width: 90%;
+  margin: 5% 5%;
+  }
+
+.tweet_footer {
+  display: flex;
+  border-top: 4px solid black;
+  margin: 0 2% 5% 2%;
+  font-size: 12px;
+  }
+
+.tweet_footer span {
+  padding: 5px 10px;
+  }
+
+.img_footer {
+  margin-left: auto;
+  padding-top: 5px;
+  }
 }

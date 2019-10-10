@@ -1,5 +1,6 @@
 .new-tweet {
   display: flex;
+  /* display: none; */
   flex-flow: column;
   max-width: 100%;
   /* margin-left: 300px; */
@@ -12,6 +13,10 @@
   height: 40px;
   background: #f4f1ec;
   resize: none;
+}
+
+#tweetBox:focus {
+  outline: none;
 }
 
 .inputDiv {
@@ -32,3 +37,41 @@
   width: 80px;
   border-radius: 6px;
 }
+
+.errorMessage {
+  display: none;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 4px;
+  color: red;
+  margin: 10px 10px 5px 10px;
+}
+
+.errorMessageNoText {
+  display: none;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 4px;
+  font-weight: bold;
+  color: red;
+  margin: 10px 10px 5px 10px;
+}
+
+.errorMessageNoText p img {
+  width: 26px;
+  height: auto;
+}
+
+.errorMessage p img {
+  width: 26px;
+  height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .errorMessageNoText, .errorMessage {
+    margin: 30px 10px 5px 10px;
+    border-radius: 4px;
+  }
+}
+

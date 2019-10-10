@@ -13,7 +13,16 @@ $(document).ready(function() {
       $('#characters').css('color', 'black');
     }
   })
+
+  $('.navDiv').on('click', () => {
+    $('.mainBodyDiv').slideToggle('slow');
+    $('#tweetBox').focus()
+  })
+
+  
 });
+
+
 
 
 
