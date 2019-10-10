@@ -55,7 +55,8 @@ $(document).ready(function () {
       method: 'POST',
       data: data
     })
-    await loadTweets();
+    loadTweets();
+    $('#tweetBox').val('');
   }
 
   const createTweetElement = function (tweet) {
@@ -100,11 +101,10 @@ $(document).ready(function () {
     } else if (slicedText.length > 140) {
       return alert("Character count exceed. ERROR!")
     }
-
     postNewTweet(textChar);
   })
-
   loadTweets();
+  
 });
 
 
