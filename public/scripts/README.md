@@ -6,23 +6,25 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
+!["screenshot of Landing page"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Landing-page.png)
 
+!["screenshot of Mobile view with Compose Tweets"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Mobile-view-compose-tweet.png)
+
+!["screenshot of Mobile"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Mobile-view.png)
+
+!["screenshot of Hover effects and style"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Tweet-box-hover.png)
 
 ## Dependencies
 
-- Node.js
 - Express
-- EJS
-- bcrypt
-- body-parser
-- cookie-session
+- Node 5.10.x or above
 
 ## Getting Started
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the npm install command.
-3. Start the web server using the npm run local command. The app will be served at http://localhost:8080/.
-4. Go to http://localhost:8080/ in your browser.
+- Fork this repository, then clone your fork of this repository.
+- Install dependencies using the npm install command.
+- Start the web server using the npm run local command. The app will be served at http://localhost:8080/.
+- Go to http://localhost:8080/ in your browser.
 
 
 
