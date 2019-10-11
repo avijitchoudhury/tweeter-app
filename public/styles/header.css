@@ -6,12 +6,15 @@
   align-items: center;
   justify-content: flex-end;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
-  background: linear-gradient(#4056a1,#00BFFF,#FFDAB9);
+  background: radial-gradient(#00BFFF,#FFDAB9);
+  border-style: outset;
 }
 
 #profileIMG {
-  width: 225px;
-  height: 225px;
+  width: 210px;
+  height: 210px;
+  background: white;
+  border-radius: 100px;
 }
 
 #toggle {
