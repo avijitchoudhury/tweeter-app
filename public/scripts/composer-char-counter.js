@@ -15,11 +15,14 @@ $(document).ready(function() {
   })
 
   $('.navDiv').on('click', () => {
-    $('.mainBodyDiv').slideToggle('slow');
+    if($('.new-tweet').css('display') === "none") {
+    $('.new-tweet').slideDown('slow');
+    } else {
+        $('.new-tweet').slideUp('slow');
+    }
     $('#tweetBox').focus()
   })
 
-  
 });
 
 

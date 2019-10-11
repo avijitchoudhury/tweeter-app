@@ -11,10 +11,8 @@ html {
 */
 
 body {
-  /* display: flex;
-  flex-flow: column; */
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: rgba(255, 218, 185, 0.3);
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
