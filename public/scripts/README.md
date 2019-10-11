@@ -6,13 +6,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["screenshot of Landing page"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Landing-page.png)
+!["screenshot of Landing page"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Landing-page.png?raw=true)
 
-!["screenshot of Mobile view with Compose Tweets"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Mobile-view-compose-tweet.png)
+!["screenshot of Mobile view with Compose Tweets"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Mobile-view-compose-tweet.png?raw=true)
 
-!["screenshot of Mobile"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Mobile-view.png)
+!["screenshot of Mobile"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Mobile-view.png?raw=true)
 
-!["screenshot of Hover effects and style"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Tweet-box-hover.png)
+!["screenshot of Hover effects and style"](https://github.com/avijitchoudhury/tweeter-app/blob/master/docs/Tweet-box-hover.png?raw=true)
 
 ## Dependencies
 
